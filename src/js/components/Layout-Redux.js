@@ -54,7 +54,8 @@ const mapDispatchToProps = (dispatch) => {
 
   }
 }
-
+//connect method takes mapStateToProps, mapDispactchToProps arguments and returns a function which intern takes Layout class as argument
+//and injects the store and dispact actions as props similar to Object.defineProperty()
 const VisibleTodoList = connect(
   mapStateToProps,
   mapDispatchToProps
